@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
 			</Head>
 			{/* navbar */}
 			<NavBar />
-			<div>{children}</div>
+			<div className="w-full">{children}</div>
 			{/* rodapé/footer */}
 			<Footer />
 		</div>
