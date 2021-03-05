@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
 			<Head>
 				<title>KriolStock</title>
 				<script
-					src="https://kit.fontawesome.com/3b2f89328d.js"
+					src="https://kit.fontawesome.com/e81c075ac3.js"
 					crossOrigin="anonymous"
 				></script>
 			</Head>

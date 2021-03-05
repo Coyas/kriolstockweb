@@ -1,5 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
 import { useState } from "react";
+import Link from "next/link";
 
 const GET_CATEGRIAS = gql`
 	query AllCategorias {
@@ -24,6 +25,8 @@ const NavBar = () => {
 	// console.log(getCategorias);
 	// console.log("ttt");
 	// console.log(ttt);
+	const loading = true;
+	const user = true;
 
 	const [uvisivel, Setuvisivel] = useState(false);
 	const [mvisivel, Setmvisivel] = useState(true);
@@ -166,22 +169,25 @@ const NavBar = () => {
 
 						{/* <!-- Profile dropdown --> */}
 						<div className="ml-3 relative">
+							{/* {!loading &&
+								(user ? ( */}
 							<div>
-								<button
-									className="bg-blue-400 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-white"
-									id="user-menu"
-									aria-haspopup="true"
-									onClick={UvisivelClick}
-								>
-									<span className="sr-only">Open user menu</span>
-									<img
-										className="h-8 w-8 rounded-full"
-										src="/userIcon.png"
-										alt=""
-									/>
-								</button>
-							</div>
-							{/* <!--
+								<div>
+									<button
+										className="bg-blue-400 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-white"
+										id="user-menu"
+										aria-haspopup="true"
+										onClick={UvisivelClick}
+									>
+										<span className="sr-only">Open user menu</span>
+										<img
+											className="h-8 w-8 rounded-full"
+											src="/userIcon.png"
+											alt=""
+										/>
+									</button>
+								</div>
+								{/* <!--
 								Profile dropdown panel, show/hide based on dropdown state.
 
 								Entering: "transition ease-out duration-100"
@@ -191,36 +197,47 @@ const NavBar = () => {
 								From: "transform opacity-100 scale-100"
 								To: "transform opacity-0 scale-95"
 							--> */}
-							<div
-								className={`${
-									uvisivel ? "" : "hidden"
-								} origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5`}
-								role="menu"
-								aria-orientation="vertical"
-								aria-labelledby="user-menu"
-							>
-								<a
-									href="#"
-									className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-									role="menuitem"
+								<div
+									className={`${
+										uvisivel ? "" : "hidden"
+									} origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5`}
+									role="menu"
+									aria-orientation="vertical"
+									aria-labelledby="user-menu"
 								>
-									Meu Perfil
-								</a>
-								<a
-									href="#"
-									className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-									role="menuitem"
-								>
-									Configuraçoes
-								</a>
-								<a
-									href="#"
-									className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-									role="menuitem"
-								>
-									Entrar
-								</a>
+									<a
+										href="#"
+										className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+										role="menuitem"
+									>
+										Ailton Duarte
+									</a>
+									<a
+										href="#"
+										className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+										role="menuitem"
+									>
+										Configuraçoes
+									</a>
+									<a
+										href="#"
+										className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+										role="menuitem"
+									>
+										Sair
+									</a>
+								</div>
 							</div>
+							{/* ) : (
+									<Link href="/auth/login">
+										<a className="text-gray-200">
+											Log in
+											<span className="icon">
+												<i className="far fa-user"></i>
+											</span>
+										</a>
+									</Link>
+								))} */}
 						</div>
 					</div>
 				</div>
