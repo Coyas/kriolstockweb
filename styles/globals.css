@@ -5,7 +5,12 @@
 body {
 	@apply bg-gray-100;
 }
+/* verdadeiro badge */
+.badges {
+	@apply ml-2 mt-2 p-2 bg-gray-100 text-gray-700 text-xs uppercase font-bold rounded-full;
+}
 
+/* esse badge possui sobreposiçao */
 .badge {
 	@apply absolute mr-2 mt-2 p-1 hover:bg-gray-100 text-gray-700 rounded-full;
 }
@@ -15,4 +20,8 @@ body {
 
 .card {
 	@apply rounded bg-white border-gray-200 shadow-md overflow-hidden relative mb-2;
+}
+
+.btn {
+	@apply rounded-full py-2 px-3  uppercase text-xs font-bold cursor-pointer tracking-wider;
 }
