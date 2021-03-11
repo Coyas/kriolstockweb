@@ -12,6 +12,10 @@ const Layout = ({ children }) => {
 					src="https://kit.fontawesome.com/e81c075ac3.js"
 					crossOrigin="anonymous"
 				></script>
+				<script
+					src="https://kit.fontawesome.com/3b2f89328d.js"
+					crossorigin="anonymous"
+				></script>
 			</Head>
 			{/* navbar */}
 			<NavBar />

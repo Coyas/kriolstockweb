@@ -1,0 +1,31 @@
+import CollectionItem from "../CollectionItem";
+
+const Collection = () => {
+	return (
+		<div>
+			<div className="mt-8">
+				{/* <!-- cards go here --> */}
+				<CollectionItem
+					id="a"
+					link="/DB/a.jpg"
+					author="kriolStock"
+					title="latada gammers"
+				/>
+				<CollectionItem
+					id="b"
+					link="/DB/b.jpg"
+					author="kalua filmes"
+					title="oasis na brava"
+				/>
+				<CollectionItem
+					id="c"
+					link="/DB/c.jpg"
+					author="SCI"
+					title="pequenos sorisos"
+				/>
+			</div>
+		</div>
+	);
+};
+
+export default Collection;

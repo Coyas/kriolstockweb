@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import Banner from "../components/Banner";
-import Card from "../components/Card";
+import Collection from "../components/Collection";
 
 function HomePage() {
 	return (
@@ -14,7 +14,7 @@ function HomePage() {
 						</a>{" "}
 						destaque
 					</h4>
-					<Card />
+					<Collection />
 				</div>
 			</section>
 			<section className="">colaboradores</section>
