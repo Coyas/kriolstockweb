@@ -7,7 +7,7 @@ const CollectionItem = (props) => {
 				<a>
 					<img
 						src={props.link}
-						alt="stew"
+						alt={props.title}
 						className="h-32 sm:h-48 w-full object-cover"
 					/>
 				</a>
