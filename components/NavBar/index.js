@@ -40,7 +40,7 @@ const NavBar = () => {
 
 	return (
 		// <!-- This example requires Tailwind CSS v2.0+ -->
-		<nav className="bg-blue-600 sticky top-0">
+		<nav className="bg-white sticky top-0">
 			<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
 				<div className="relative flex items-center justify-between h-16">
 					<div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -100,12 +100,12 @@ const NavBar = () => {
 							<a href="/">
 								<img
 									className="block lg:hidden h-8 w-auto"
-									src="/logo.png"
+									src="/logo2.png"
 									alt="kriolStocklogo"
 								/>
 								<img
 									className="hidden lg:block h-8 w-auto"
-									src="/logo.png"
+									src="/logo2.png"
 									alt="kriolStocklogo"
 								/>
 							</a>
@@ -121,25 +121,25 @@ const NavBar = () => {
 								</a>
 								<a
 									href="#"
-									className="text-gray-100 hover:bg-blue-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+									className="text-gray-700 hover:bg-blue-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 								>
 									Imagens
 								</a>
 								<a
 									href="#"
-									className="text-gray-100 hover:bg-blue-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+									className="text-gray-700 hover:bg-blue-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 								>
 									Ilustraçoes
 								</a>
 								<a
 									href="#"
-									className="text-gray-100 hover:bg-blue-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+									className="text-gray-700 hover:bg-blue-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 								>
 									icons
 								</a>
 								<a
 									href="#"
-									className="text-gray-100 hover:bg-blue-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+									className="text-gray-700 hover:bg-blue-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 								>
 									Videos
 								</a>
@@ -174,7 +174,7 @@ const NavBar = () => {
 							<div>
 								<div>
 									<button
-										className="bg-blue-400 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-white"
+										className="bg-white hover:bg-blue-500 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-white"
 										id="user-menu"
 										aria-haspopup="true"
 										onClick={UvisivelClick}
@@ -182,7 +182,7 @@ const NavBar = () => {
 										<span className="sr-only">Open user menu</span>
 										<img
 											className="h-8 w-8 rounded-full"
-											src="/userIcon.png"
+											src="/userIcon2.png"
 											alt=""
 										/>
 									</button>
@@ -259,25 +259,25 @@ const NavBar = () => {
 					</a>
 					<a
 						href="#"
-						className="text-gray-100 hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+						className="text-gray-700 hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 					>
 						Imagens
 					</a>
 					<a
 						href="#"
-						className="text-gray-100 hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+						className="text-gray-700 hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 					>
 						Ilustraçoes
 					</a>
 					<a
 						href="#"
-						className="text-gray-100 hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+						className="text-gray-700 hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 					>
 						Icons
 					</a>
 					<a
 						href="#"
-						className="text-gray-100 hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+						className="text-gray-700 hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 					>
 						Videos
 					</a>
