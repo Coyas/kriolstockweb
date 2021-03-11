@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const CollectionItem = (props) => {
 	return (
-		<div className="card">
+		<div className="card hover:shadow-lg">
 			<Link href={`/colecoes/${props.id}`}>
 				<a>
 					<img
