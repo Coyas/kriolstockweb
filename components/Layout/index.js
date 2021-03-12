@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "../Footer";
 import NavBar from "../NavBar";
+import Flexa from "../Flexa";
 
 const Layout = ({ children }) => {
 	return (
@@ -20,6 +21,8 @@ const Layout = ({ children }) => {
 			{/* navbar */}
 			<NavBar />
 			<div className="w-full">{children}</div>
+			{/* volte ao inicio da tella */}
+			{/* <Flexa /> */}
 			{/* rodapé/footer */}
 			<Footer />
 		</div>

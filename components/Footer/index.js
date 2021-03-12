@@ -3,7 +3,7 @@
 const Footer = () => {
 	return (
 		<footer className="bg-gray-800">
-			{/* <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+			<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 				<div className="flex justify-between pt-4 pb-4 text-gray-300">
 					<div>
 						<h1>KriolStock</h1>
@@ -66,7 +66,7 @@ const Footer = () => {
 						</ul>
 					</div>
 				</div>
-			</div> */}
+			</div>
 			<div className="border-t border-gray-400 max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 				<div className="relative flex items-center justify-between h-16">
 					<a className="text-gray-400">&copy; KriolStock 2021</a>

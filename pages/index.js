@@ -2,6 +2,10 @@ import Layout from "../components/Layout";
 import Banner from "../components/Banner";
 import Collection from "../components/Collection";
 
+const subscrever = () => {
+	alert("subscrevendo seu email");
+};
+
 function HomePage() {
 	return (
 		<Layout>
@@ -17,6 +21,7 @@ function HomePage() {
 					<Collection />
 				</div>
 			</section>
+			{/* a segunda section cnotem um convite para as pessoas */}
 			<section className="bg-gray-600 grid lg:grid-cols-2 p-11">
 				<div className="p-10">
 					<img src="/DB/l.jpg" alt="fotos" className="w-full" />
@@ -49,6 +54,77 @@ function HomePage() {
 							</span>
 						</p>
 					</article>
+				</div>
+			</section>
+			{/* ultimas imagens adicionadas no app */}
+			<section>
+				<div className="m-12">
+					<h4 className="font-bold pb-1 mt-10 border-b border-gray-300 w-44">
+						<a href="/imagens" className="text-base uppercase">
+							Imagens
+						</a>{" "}
+						recentes
+					</h4>
+					<Collection />
+				</div>
+			</section>
+			{/* convite para colaboradores  */}
+			<section className="bg-gray-600 grid lg:grid-cols-2 p-11">
+				<div className="py-10 px-10">
+					<h1 className="text-white uppercase font-bold lg:text-4xl mb-7">
+						colaboradores
+					</h1>
+					<article className="text-white lg:text-2xl">
+						<p className="text-xl mb-4">Trabalha com o audio visual?</p>
+						<p className="text-xl mb-4">
+							Ajude-nos a divulvar mais de cabo verde para o mundo
+						</p>
+
+						<p className="text-xl mb-4">
+							partilhe com o mundo as suas criaçoes
+						</p>
+						<p className="text-xl mb-2">
+							<a href="/contribuir" className="btn">
+								Participe agora
+							</a>
+						</p>
+					</article>
+				</div>
+				<div className="p-10">
+					<img src="/DB/l.jpg" alt="fotos" className="w-full" />
+				</div>
+			</section>
+			{/* subscricao form */}
+			<section className="p-4 md:p-11 ld:p-11 grid lg:grid-cols-2">
+				<p className="uppercase font-bold text-xs md:text-xl lg:text-2xl text-gray-700">
+					Subscreva e esteja atentos as publicaçoes mais recentes
+				</p>
+				<div>
+					<form className="relative">
+						<input
+							className="focus:border-light-blue-500 focus:ring-1 focus:ring-light-blue-500 focus:outline-none w-full text-xs md:text-md lg:text-lg text-gray-700 placeholder-gray-500 border border-gray-200 rounded-md py-5 pl-5"
+							type="text"
+							aria-label="subscriçao de email"
+							placeholder="Desponibilize seu email"
+						/>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							width="40"
+							height="40"
+							className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 rotate-90 cursor-pointer"
+							onClick={subscrever}
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={2}
+								d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+							/>
+						</svg>
+					</form>
 				</div>
 			</section>
 		</Layout>
