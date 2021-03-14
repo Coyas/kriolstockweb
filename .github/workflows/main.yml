@@ -25,12 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Rodando o programa!
-        run: echo Hello, world!
-
       - name: atualizar pacotes
         run: yarn install
 
-      - name: executa o site branch devel
-        run: yarn dev
+      - name: parar o pm2 do kriolstockweb
+        run: pm2 stop kriolstockweb
+
+      - name: iniciar o pm2 do kriolstockweb
+        run: pm2 start kriolstockweb
