@@ -26,7 +26,7 @@ function HomePage() {
 				<div className="p-10">
 					<img src="/foto-site.png" alt="fotos" className="w-full" />
 				</div>
-				<div className="py-10 px-10">
+				<div className="py-10 px-10  flex flex-wrap content-center">
 					<h1 className="text-white uppercase font-bold lg:text-4xl mb-7">
 						Conteudos Exclusivos
 					</h1>
@@ -44,7 +44,7 @@ function HomePage() {
 								<a href="#">#praia</a>
 							</span>
 							<span className="badges">
-								<a href="#">#asomada</a>
+								<a href="#">#assomada</a>
 							</span>
 							<span className="badges">
 								<a href="#">#tarrafal</a>
@@ -70,25 +70,30 @@ function HomePage() {
 			</section>
 			{/* convite para colaboradores  */}
 			<section className="bg-gray-600 grid lg:grid-cols-2 p-11">
-				<div className="py-10 px-10">
-					<h1 className="text-white uppercase font-bold lg:text-4xl mb-7">
-						colaboradores
-					</h1>
-					<article className="text-white lg:text-2xl">
-						<p className="text-xl mb-4">Trabalha com o audio visual?</p>
-						<p className="text-xl mb-4">
-							Ajude-nos a divulvar mais de cabo verde para o mundo
-						</p>
+				<div className="py-10 px-10 flex flex-wrap content-center">
+					<div className="">
+						<h1 className="text-white uppercase font-bold text-5xl lg:text-4xl mb-7 p-4 text-center ">
+							colaboradores
+						</h1>
+						<article className="text-white lg:text-2xl text-justify">
+							<p className="text-xl mb-4">
+								Trabalha com o audio visual <span>?</span>
+							</p>
+							<p className="text-xl mb-4">
+								Ajude-nos a divulgar mais de cabo verde para o mundo
+							</p>
 
-						<p className="text-xl mb-4">
-							partilhe com o mundo as suas criaçoes
-						</p>
-						<p className="text-xl mb-2">
-							<a href="/contribuir" className="btn">
-								Participe agora
-							</a>
-						</p>
-					</article>
+							<p className="text-xl mb-4">
+								Partilhe com o mundo as suas criaçoes
+							</p>
+
+							<p className="text-xl mb-2 text-center mt-16">
+								<a href="/contribuir" className="btn">
+									Participe agora
+								</a>
+							</p>
+						</article>
+					</div>
 				</div>
 				<div className="p-10">
 					<img src="/foto-a2.png" alt="fotos" className="w-full" />
