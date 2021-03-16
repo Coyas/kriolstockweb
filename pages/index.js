@@ -91,7 +91,7 @@ function HomePage() {
 					</article>
 				</div>
 				<div className="p-10">
-					<img src="/foto-a1.png" alt="fotos" className="w-full" />
+					<img src="/foto-a2.png" alt="fotos" className="w-full" />
 				</div>
 			</section>
 			{/* subscricao form */}
