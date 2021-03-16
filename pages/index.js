@@ -24,7 +24,7 @@ function HomePage() {
 			{/* a segunda section cnotem um convite para as pessoas */}
 			<section className="bg-gray-600 grid lg:grid-cols-2 p-11">
 				<div className="p-10">
-					<img src="/DB/l.jpg" alt="fotos" className="w-full" />
+					<img src="/foto-site.png" alt="fotos" className="w-full" />
 				</div>
 				<div className="py-10 px-10">
 					<h1 className="text-white uppercase font-bold lg:text-4xl mb-7">
