@@ -9,7 +9,7 @@ const Detail = () => {
 		<Layout>
 			<section className="m-10 flex justify-center">
 				<div className="w-full mr-2">
-					<img className="w-full rounded" src={`/DB/${id}.jpg`} />
+					<img className="w-full rounded" src={`/DB/a.jpg`} />
 				</div>
 				{/* <!-- This example requires Tailwind CSS v2.0+ --> */}
 				<div className="bg-white shadow overflow-hidden sm:rounded-lg">

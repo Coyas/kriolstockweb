@@ -12,7 +12,7 @@ body {
 
 /* esse badge possui sobreposiçao */
 .badge {
-	@apply absolute mr-2 mt-2 p-1 hover:bg-gray-100 text-gray-700 rounded-full;
+	@apply absolute mr-2 mt-2 p-1 bg-gray-500 text-gray-900 rounded-full;
 }
 .badge-title {
 	@apply absolute top-0 ml-2 mt-2 p-2 bg-gray-100 text-gray-700 text-xs uppercase font-bold rounded-full;

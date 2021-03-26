@@ -9,14 +9,14 @@ const Layout = ({ children }) => {
 			{/* title e metatags do site */}
 			<Head>
 				<title>KriolStock</title>
-				{/* <script
+				<script
 					src="https://kit.fontawesome.com/e81c075ac3.js"
 					crossOrigin="anonymous"
-				></script> */}
-				<script
+				></script>
+				{/* <script
 					src="https://kit.fontawesome.com/3b2f89328d.js"
 					crossOrigin="anonymous"
-				></script>
+				></script> */}
 			</Head>
 			{/* navbar */}
 			<NavBar />
