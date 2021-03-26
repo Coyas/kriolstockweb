@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import Banner from "../components/Banner";
 import Collection from "../components/Collection";
+import Card from "../components/Card";
 
 const subscrever = () => {
 	alert("subscrevendo seu email");
@@ -65,7 +66,7 @@ function HomePage() {
 						</a>{" "}
 						recentes
 					</h4>
-					<Collection />
+					<Card />
 				</div>
 			</section>
 			{/* convite para colaboradores  */}

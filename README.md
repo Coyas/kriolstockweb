@@ -1,5 +1,7 @@
 # KriolStock Photo webpage
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/57d64423-2d43-4039-a9ca-98fc6ae1d90a/deploy-status)](https://app.netlify.com/sites/thirsty-johnson-480f74/deploys)
+
 Este sistema é o frontend a parte visivel aos usuarios onde poderam interagir com o systema
 
 ## Instalaçao
