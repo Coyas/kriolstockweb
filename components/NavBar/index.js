@@ -100,15 +100,15 @@ const NavBar = () => {
 						<div className="flex-shrink-0 flex items-center">
 							<a href="/">
 								<img
-									className="block lg:hidden h-8 w-auto"
-									src="/logo2.png"
+									className="block lg:hidden h-11 w-auto"
+									src="/image12.png"
 									alt="kriolStocklogo"
 									width="135"
 									height="32"
 								/>
 								<img
-									className="hidden lg:block h-8 w-auto"
-									src="/logo2.png"
+									className="hidden lg:block h-11 w-auto"
+									src="/image12.png"
 									alt="kriolStocklogo"
 									width="135"
 									height="32"
