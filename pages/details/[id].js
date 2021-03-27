@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
-import Card from "../../components/Card";
+import MultCard from "../../components/MultCard";
 import Image from "next/image";
 
 const Detail = () => {
@@ -114,7 +114,7 @@ const Detail = () => {
 				<h1 className="text-md font-bold border-b border-black ml-1">
 					Sugestoes
 				</h1>
-				<Card />
+				<MultCard />
 			</section>
 		</Layout>
 	);

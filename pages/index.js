@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Banner from "../components/Banner";
 import Collection from "../components/Collection";
-import Card from "../components/Card";
+import MultCard from "../components/MultCard";
 import Image from "next/image";
 
 const subscrever = () => {
@@ -73,7 +73,7 @@ function HomePage() {
 						</a>{" "}
 						recentes
 					</h4>
-					<Card />
+					<MultCard />
 				</div>
 			</section>
 			{/* convite para colaboradores  */}

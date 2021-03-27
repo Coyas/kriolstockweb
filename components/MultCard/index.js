@@ -1,6 +1,6 @@
 import CardItens from "../CardItens";
 
-const Card = () => {
+const MultCard = () => {
 	return (
 		<div>
 			<div className="mt-8 grid lg:grid-cols-4 gap-3">
@@ -34,4 +34,4 @@ const Card = () => {
 	);
 };
 
-export default Card;
+export default MultCard;
