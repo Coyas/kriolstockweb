@@ -1,4 +1,5 @@
 // &copy; kriolStock 2021 by TerraSsytem
+import Image from "next/image";
 
 const Footer = () => {
 	return (
@@ -92,7 +93,12 @@ const Footer = () => {
 						href="/"
 						className="text-gray-300 hover:text-white hover:underline"
 					>
-						<img src="/kriolStockLogo2.png" width="100" />
+						<Image
+							src="/kriolStockLogo2.png"
+							alt="logo footer"
+							width="100"
+							height="13"
+						/>
 					</a>
 					<a
 						href="#"

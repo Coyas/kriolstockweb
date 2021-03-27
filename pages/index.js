@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import Banner from "../components/Banner";
 import Collection from "../components/Collection";
 import Card from "../components/Card";
+import Image from "next/image";
 
 const subscrever = () => {
 	alert("subscrevendo seu email");
@@ -25,7 +26,13 @@ function HomePage() {
 			{/* a segunda section cnotem um convite para as pessoas */}
 			<section className="bg-gray-600 grid lg:grid-cols-2 p-11">
 				<div className="p-10">
-					<img src="/foto-site.png" alt="fotos" className="w-full" />
+					<Image
+						src="/foto-site.png"
+						alt="fotos"
+						className="w-full"
+						width="711"
+						height="458"
+					/>
 				</div>
 				<div className="py-10 px-10  flex flex-wrap content-center">
 					<h1 className="text-white uppercase font-bold lg:text-4xl mb-7">
@@ -97,7 +104,13 @@ function HomePage() {
 					</div>
 				</div>
 				<div className="p-10">
-					<img src="/foto-a2.png" alt="fotos" className="w-full" />
+					<Image
+						src="/foto1.png"
+						alt="fotos"
+						className="w-full"
+						width="709"
+						height="585"
+					/>
 				</div>
 			</section>
 			{/* subscricao form */}

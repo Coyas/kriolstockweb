@@ -1,6 +1,7 @@
 import { gql, useQuery } from "@apollo/client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const GET_CATEGRIAS = gql`
 	query AllCategorias {
@@ -102,11 +103,15 @@ const NavBar = () => {
 									className="block lg:hidden h-8 w-auto"
 									src="/logo2.png"
 									alt="kriolStocklogo"
+									width="135"
+									height="32"
 								/>
 								<img
 									className="hidden lg:block h-8 w-auto"
 									src="/logo2.png"
 									alt="kriolStocklogo"
+									width="135"
+									height="32"
 								/>
 							</a>
 						</div>
@@ -186,10 +191,12 @@ const NavBar = () => {
 										onClick={UvisivelClick}
 									>
 										<span className="sr-only">Open user menu</span>
-										<img
+										<Image
 											className="h-8 w-8 rounded-full"
 											src="/userIcon2.png"
-											alt=""
+											alt="utilizador"
+											width="33"
+											height="33"
 										/>
 									</button>
 								</div>
