@@ -195,8 +195,8 @@ const NavBar = () => {
 											className="h-8 w-8 rounded-full"
 											src="/userIcon2.png"
 											alt="utilizador"
-											width="33"
-											height="33"
+											width="35"
+											height="35"
 										/>
 									</button>
 								</div>
