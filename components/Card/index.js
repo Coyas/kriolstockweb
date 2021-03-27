@@ -7,7 +7,7 @@ const Card = () => {
 				{/* <!-- cards go here --> */}
 				<CardItens
 					id="a"
-					link="/DB/a.jpg"
+					link="/foto1.png"
 					author="kriolStock"
 					title="latada gammers"
 				/>

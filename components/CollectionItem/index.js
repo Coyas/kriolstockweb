@@ -1,14 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const CollectionItem = (props) => {
 	return (
 		<div className="card hover:shadow-lg">
 			<Link href={`/colecoes/${props.id}`}>
 				<a>
-					<img
+					<Image
 						src={props.link}
 						alt={props.title}
 						className="h-32 sm:h-48 w-full object-cover"
+						width={382}
+						height={192}
 					/>
 				</a>
 			</Link>

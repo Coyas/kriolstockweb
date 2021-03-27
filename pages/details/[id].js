@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
 import Card from "../../components/Card";
+import Image from "next/image";
 
 const Detail = () => {
 	const router = useRouter();
@@ -9,7 +10,13 @@ const Detail = () => {
 		<Layout>
 			<section className="m-10 flex justify-center">
 				<div className="w-full mr-2">
-					<img className="w-full rounded" src={`/DB/a.jpg`} />
+					<Image
+						className="w-full rounded"
+						src={`/foto1.png`}
+						alt="detalhe da imagem"
+						width="800"
+						height="684"
+					/>
 				</div>
 				{/* <!-- This example requires Tailwind CSS v2.0+ --> */}
 				<div className="bg-white shadow overflow-hidden sm:rounded-lg">
