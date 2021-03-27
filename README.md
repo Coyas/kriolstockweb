@@ -1,17 +1,20 @@
 # KriolStock Photo webpage
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/57d64423-2d43-4039-a9ca-98fc6ae1d90a/deploy-status)](https://app.netlify.com/sites/thirsty-johnson-480f74/deploys)
+Este sistema é um dos frontend da kriolstock photo, a parte disponivel para interaçao entre Utilizadores e qualquer publico em geral.
 
-Este sistema é o frontend a parte visivel aos usuarios onde poderam interagir com o systema
+Nesta UI é possivel pesquisar por conteudos e a sua aquisiçao so é possivel mediante a criaçao de uma conta na plataforma e
+os conteudos podem ser gratis ou pagos.
 
-## Instalaçao
+# Instalaçao
 
 - yarn i -- instalar dependencias
 - yarn dev --para modo desenvolvimento
-- yarn build -- configurar para leva a producao
-- yarn start -- para usar em producao
+- yarn build -- configurar para levar a produçao
+- yarn start -- para usar em producao (so funciona apos o yarn build)
 
 ## Inicializar o app com o [PM2](https://pm2.keymetrics.io/)
+
+Para ter uma instancia desta UI no seu servidor local.
 
 ### Desenvolvimento
 
