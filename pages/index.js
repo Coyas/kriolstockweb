@@ -47,7 +47,7 @@ function HomePage() {
 							<p className="text-xl mb-4">A visao de cabo verde num so lugar</p>
 
 							<p className="text-xl mb-4">
-								Partilhe com o mundo as suas criaçoes
+								Acesse alguns conteudos apartir das tags
 							</p>
 
 							{/* <p className="mb-2 text-center mt-16">
