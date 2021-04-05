@@ -25,13 +25,15 @@ const CollectionItem = (props) => {
 					<a href={`/ami/"${props.author}`}>by {props.author}</a>
 				</span>
 			</div>
-			<div className="badge top-0 right-0">
-				<a href="#">
-					<span>
-						<i className="far fa-heart"></i>
-					</span>
+			{/* <div className=""> */}
+			<Link href="/likeit">
+				<a className="badge top-0 right-0">
+					{/* <span> */}
+					<i className="far fa-heart"></i>
+					{/* </span> */}
 				</a>
-			</div>
+			</Link>
+			{/* </div> */}
 		</div>
 	);
 };
