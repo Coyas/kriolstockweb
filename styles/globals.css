@@ -25,3 +25,7 @@ body {
 .btn {
 	@apply bg-red-600 shadow-md rounded-full py-5 px-8  uppercase text-sm font-bold cursor-pointer tracking-wider;
 }
+
+.active {
+	@apply border-b-4 border-blue-400;
+}
