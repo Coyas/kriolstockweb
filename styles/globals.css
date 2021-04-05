@@ -10,10 +10,11 @@ body {
 	@apply ml-2 mt-2 p-2 bg-gray-100 text-gray-700 text-xs uppercase font-bold rounded-full;
 }
 
-/* esse badge possui sobreposiçao */
+/* esse badge possui sobreposiçao mr-2 mt-2 p-1*/
 .badge {
-	@apply absolute mr-2 mt-2 p-1 bg-gray-500 text-gray-900 rounded-full;
+	@apply absolute h-7 w-7 bg-gray-500 text-gray-900 rounded-full flex items-center justify-center;
 }
+
 .badge-title {
 	@apply absolute top-0 ml-2 mt-2 p-2 bg-gray-100 text-gray-700 text-xs uppercase font-bold rounded-full;
 }
