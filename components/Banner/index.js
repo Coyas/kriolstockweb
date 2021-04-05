@@ -5,7 +5,7 @@ const Banner = () => {
 			style={{ backgroundImage: "url('/Banner.png')" }}
 		>
 			<div className="flex justify-center pt-52 pb-52 ">
-				<div className="w-2/4">
+				<div className="w-11/12 md:w-2/4">
 					<form className="bg-white flex items-center rounded-full shadow-xl">
 						<input
 							className="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
