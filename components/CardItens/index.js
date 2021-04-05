@@ -26,11 +26,13 @@ const CardItens = (props) => {
 					<a href={`/ami/"${props.author}`}>by {props.author}</a>
 				</span>
 			</div> */}
-			<a href="/likeaboss" className="badge top-0 right-0">
-				<span>
+			<Link href="/likeit">
+				<a className="badge top-0 right-0">
+					{/* <span> */}
 					<i className="far fa-heart"></i>
-				</span>
-			</a>
+					{/* </span> */}
+				</a>
+			</Link>
 
 			{/* <p > */}
 			<span className="badge-title">{props.title}</span>
