@@ -24,7 +24,7 @@ function HomePage() {
 				</div>
 			</section>
 			{/* a segunda section cnotem um convite para as pessoas */}
-			<section className="bg-gray-600 grid lg:grid-cols-2 p-11">
+			<section className="bg-gray-600 grid lg:grid-cols-2 p-0 mb:p-11">
 				<div className="p-10">
 					<Image
 						src="/foto-site.png"
