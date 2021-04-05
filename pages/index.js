@@ -24,44 +24,40 @@ function HomePage() {
 				</div>
 			</section>
 			{/* a segunda section cnotem um convite para as pessoas */}
-			<section className="bg-gray-600 grid lg:grid-cols-2 p-0 mb:p-11">
-				<div className="p-10">
+			<section className="bg-gray-600 grid lg:grid-cols-2 p-11">
+				<div className="md:p-10">
 					<Image
 						src="/foto-site.png"
 						alt="fotos"
 						className="w-full"
-						width="711"
-						height="458"
+						width="709"
+						height="585"
 					/>
 				</div>
-				<div className="py-10 px-10  flex flex-wrap content-center">
-					<h1 className="text-white uppercase font-bold lg:text-4xl mb-7">
-						Conteudos Exclusivos
-					</h1>
-					<article className="text-white lg:text-2xl">
-						<p className="text-xl mb-4">
-							Adquira imagens de qualidade, videos exclusivos
-							<br /> os vectores dos simbolos mais famosos
-							<br /> e as ilustraçoes de grandes artistas
-						</p>
-						<p className="text-xl mb-4">A visao de cabo verde num so lugar</p>
+				<div className=" md:py-10 md:px-10 flex flex-wrap content-center">
+					<div className="">
+						<h1 className="text-white uppercase font-bold text-2xl md:text-5xl lg:text-4xl mb-7 p-2 text-center ">
+							Conteudos Exclusivos
+						</h1>
+						<article className="text-white lg:text-2xl text-justify">
+							<p className="text-xl mb-4">
+								Adquira imagens de qualidade, videos exclusivos e as ilustraçoes
+								de grandes artistas
+							</p>
+							<p className="text-xl mb-4">A visao de cabo verde num so lugar</p>
 
-						<p className="text-xl mb-2">Acesse algumas apartir das tags</p>
-						<p>
-							<span className="badges">
-								<a href="#">#praia</a>
-							</span>
-							<span className="badges">
-								<a href="#">#assomada</a>
-							</span>
-							<span className="badges">
-								<a href="#">#tarrafal</a>
-							</span>
-							<span className="badges">
-								<a href="#">#latada</a>
-							</span>
-						</p>
-					</article>
+							<p className="text-xl mb-4">
+								Partilhe com o mundo as suas criaçoes
+							</p>
+
+							{/* <p className="mb-2 text-center mt-16">
+								<span className="badges">#praia</span>
+								<span className="badges">#assomada</span>
+								<span className="badges">#tarrafal</span>
+								<span className="badges">#latada</span>
+							</p> */}
+						</article>
+					</div>
 				</div>
 			</section>
 			{/* ultimas imagens adicionadas no app */}
@@ -78,9 +74,9 @@ function HomePage() {
 			</section>
 			{/* convite para colaboradores  */}
 			<section className="bg-gray-600 grid lg:grid-cols-2 p-11">
-				<div className="py-10 px-10 flex flex-wrap content-center">
+				<div className="md:py-10 md:px-10 flex flex-wrap content-center">
 					<div className="">
-						<h1 className="text-white uppercase font-bold text-5xl lg:text-4xl mb-7 p-4 text-center ">
+						<h1 className="text-white uppercase font-bold text-2xl md:text-5xl lg:text-4xl mb-7 p-2 text-center ">
 							colaboradores
 						</h1>
 						<article className="text-white lg:text-2xl text-justify">
@@ -103,7 +99,7 @@ function HomePage() {
 						</article>
 					</div>
 				</div>
-				<div className="p-10">
+				<div className="md:p-10 mt-10">
 					<Image
 						src="/foto1.png"
 						alt="fotos"
@@ -114,7 +110,7 @@ function HomePage() {
 				</div>
 			</section>
 			{/* subscricao form */}
-			<section className="p-4 md:p-11 ld:p-11 grid lg:grid-cols-2">
+			<section className="p-8 md:p-11 ld:p-11 grid lg:grid-cols-2">
 				<p className="uppercase font-bold text-xs md:text-xl lg:text-2xl text-gray-700">
 					Subscreva e esteja atentos as publicaçoes mais recentes
 				</p>
