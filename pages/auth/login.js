@@ -1,61 +1,67 @@
+import Authlayout from "../../components/Layout/Authlayout";
+
 const Login = () => {
 	return (
-		<div
-			className="flex items-center justify-center h-screen bg-no-repeat bg-cover"
-			// style={{ backgroundImage: "url('/login.jpg')" }}
-		>
-			<div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col max-w-md">
-				<div className="mb-4 border-b border-gray-400 flex justify-between">
-					<h1 className="block text-grey-darker text-xl font-bold mb-2">
-						KriolStock Login
-					</h1>
-					<a href="/">X</a>
-				</div>
-				<div className="mb-4">
-					<label
-						className="block text-grey-darker text-sm font-bold mb-2"
-						for="email"
-					>
-						Email
-					</label>
-					<input
-						className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker"
-						id="email"
-						type="email"
-						placeholder="Email"
-					/>
-				</div>
-				<div className="mb-6">
-					<label
-						className="block text-grey-darker text-sm font-bold mb-2"
-						for="password"
-					>
-						Senha
-					</label>
-					<input
-						className="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3"
-						id="password"
-						type="password"
-						placeholder="******************"
-					/>
-					<p className="text-red text-xs italic">Digite a sua senha.</p>
-				</div>
-				<div className="flex items-center justify-between">
-					<button
-						className="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded"
-						type="button"
-					>
-						Entrar
-					</button>
-					<a
-						className="inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker"
-						href="/auth/forgotpasswd"
-					>
-						Esqueceu a senha?
-					</a>
+		<Authlayout>
+			<div style={{ fontFamily: "Roboto" }}>
+				<div
+					className="w-full h-screen md:-mx-4"
+					style={{ filter: "blur(6px)", backgroundImage: "url('/login.jpg')" }}
+				></div>
+				<div
+					className="absolute w-3/5 bg-white"
+					style={{
+						transform: "translate(-50%, -50%)",
+						top: "50%",
+						left: "50%",
+					}}
+				>
+					<div className="flex justify-center -mt-10">
+						<img
+							className="border-2 w-20 h-20 rounded-full"
+							src="/kriolfavicon.png"
+						/>
+					</div>
+					<div className="px-12 py-10">
+						<div className="w-full mb-2">
+							<div className="flex items-center">
+								<i className="ml-3 fill-current text-gray-400 text-xs z-10 fas fa-user"></i>
+								<input
+									type="text"
+									placeholder="username"
+									className="-mx-6 px-8  w-full border rounded px-3 py-1 text-gray-700"
+								/>
+							</div>
+						</div>
+						<div className="w-full mb-2">
+							<div className="flex items-center">
+								<i className="ml-3 fill-current text-gray-400 text-xs z-10 fas fa-lock"></i>
+								<input
+									type="text"
+									placeholder="password"
+									className="-mx-6 px-8 w-full border rounded px-3 py-1 text-gray-700"
+								/>
+							</div>
+						</div>
+						<div className="mt-8 flex justify-between">
+							<div className="flex items-center">
+								<input type="checkbox" className="w-4 h-4 mr-2" />
+								<span className="text-xs text-gray-700">Remember Me</span>
+							</div>
+							<div>
+								<button
+									type="text"
+									className="bg-yellow-400 text-xs text-gray-700 rounded px-4 py-2"
+								>
+									SIGN IN
+								</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</Authlayout>
+		// </div>
 	);
 };
 
