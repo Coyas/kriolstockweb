@@ -4,16 +4,11 @@ import Image from "next/image";
 const CardItens = (props) => {
 	return (
 		// transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-105
-		<div className="hover:shadow-inner card ">
+		<div className="hover:shadow-inner card">
 			<Link href={`/colecoes/${props.id}`}>
-				<a>
-					<Image
-						src={props.link}
-						alt={props.title}
-						className="h-32 sm:h-48 w-full object-cover"
-						width={361}
-						height={240}
-					/>
+				{/* md:h-32 h-48 w-full object-cover */}
+				<a className="">
+					<Image src={props.link} alt={props.title} width={361} height={240} />
 				</a>
 			</Link>
 			{/* <div className="m-4">
@@ -35,7 +30,7 @@ const CardItens = (props) => {
 			</Link>
 
 			{/* <p > */}
-			<span className="badge-title">{props.title}</span>
+			<span className="badge-title">{props.title} terrasystem</span>
 			{/* </p> */}
 		</div>
 	);
