@@ -2,6 +2,7 @@ import { gql, useQuery } from "@apollo/client";
 import { useState } from "react";
 import Image from "next/image";
 import ActiveLink from "../Activelink";
+import Link from "next/link";
 
 const GET_CATEGRIAS = gql`
 	query AllCategorias {
@@ -27,7 +28,7 @@ const NavBar = () => {
 	// console.log("ttt");
 	// console.log(ttt);
 
-	const loading = true;
+	const loading = false;
 	const user = true;
 
 	const [uvisivel, Setuvisivel] = useState(false);
@@ -176,27 +177,43 @@ const NavBar = () => {
 
 						{/* <!-- Profile dropdown --> */}
 						<div className="ml-3 relative">
-							{/* {!loading &&
-										(user ? ( */}
-							<div>
-								<div>
-									<button
-										className="bg-white hover:bg-blue-500 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-white"
-										id="user-menu"
-										aria-haspopup="true"
-										onClick={UvisivelClick}
-									>
-										<span className="sr-only">Open user menu</span>
-										<Image
-											className="h-8 w-8 rounded-full"
-											src="/userIcon2.png"
-											alt="utilizador"
-											width="35"
-											height="35"
-										/>
-									</button>
-								</div>
-								{/* <!--
+							{!loading &&
+								(user ? (
+									<Link href="/auth/login">
+										<a
+											className="bg-white hover:bg-blue-500 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-white"
+											id="user-menu"
+										>
+											<span className="sr-only">Open user menu</span>
+											<Image
+												className="h-8 w-8 rounded-full"
+												src="/userIcon2.png"
+												alt="utilizador"
+												width="35"
+												height="35"
+											/>
+										</a>
+									</Link>
+								) : (
+									<div>
+										<div>
+											<button
+												className="bg-white hover:bg-blue-500 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-white"
+												id="user-menu"
+												aria-haspopup="true"
+												onClick={UvisivelClick}
+											>
+												<span className="sr-only">Open user menu</span>
+												<Image
+													className="h-8 w-8 rounded-full"
+													src="/userIcon2.png"
+													alt="utilizador"
+													width="35"
+													height="35"
+												/>
+											</button>
+										</div>
+										{/* <!--
 										Profile dropdown panel, show/hide based on dropdown state.
 
 										Entering: "transition ease-out duration-100"
@@ -206,47 +223,38 @@ const NavBar = () => {
 										From: "transform opacity-100 scale-100"
 										To: "transform opacity-0 scale-95"
 									--> */}
-								<div
-									className={`${
-										uvisivel ? "" : "hidden"
-									} origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5`}
-									role="menu"
-									aria-orientation="vertical"
-									aria-labelledby="user-menu"
-								>
-									<a
-										href="#"
-										className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-										role="menuitem"
-									>
-										Ailton Duarte
-									</a>
-									<a
-										href="#"
-										className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-										role="menuitem"
-									>
-										Configuraçoes
-									</a>
-									<a
-										href="#"
-										className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-										role="menuitem"
-									>
-										Sair
-									</a>
-								</div>
-							</div>
-							{/* ) : (
-											<Link href="/auth/login">
-												<a className="text-gray-200">
-													Log in
-													<span className="icon">
-														<i className="far fa-user"></i>
-													</span>
-												</a>
-											</Link>
-										))} */}
+										<div
+											className={`${
+												uvisivel ? "" : "hidden"
+											} origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5`}
+											role="menu"
+											aria-orientation="vertical"
+											aria-labelledby="user-menu"
+										>
+											<a
+												href="#"
+												className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+												role="menuitem"
+											>
+												Ailton Duarte
+											</a>
+											<a
+												href="#"
+												className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+												role="menuitem"
+											>
+												Configuraçoes
+											</a>
+											<a
+												href="#"
+												className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+												role="menuitem"
+											>
+												Sair
+											</a>
+										</div>
+									</div>
+								))}
 						</div>
 					</div>
 				</div>
