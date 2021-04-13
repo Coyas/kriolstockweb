@@ -138,7 +138,7 @@ const NavBar = () => {
 								</ActiveLink>
 								<ActiveLink activeClassName="active" href="/icons">
 									<a className="text-gray-700  px-3 py-2 text-sm font-medium">
-										icons
+										Musicas
 									</a>
 								</ActiveLink>
 								<ActiveLink activeClassName="active" href="/videos">
@@ -290,7 +290,7 @@ const NavBar = () => {
 						href="#"
 						className="text-gray-700 hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 					>
-						Icons
+						Musicas
 					</a>
 					<a
 						href="#"
