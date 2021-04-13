@@ -7,7 +7,7 @@ const CardItens = (props) => {
 		// <!-- component -->
 		// https://images.pexels.com/photos/3738673/pexels-photo-3738673.jpeg?auto=compress&cs=tinysrgb&h=350
 		<div
-			className="bg-gray-100 m-auto w-full h-64 "
+			className="bg-gray-100 m-auto w-full h-64"
 			style={{
 				backgroundImage:
 					"url('https://images.pexels.com/photos/3738673/pexels-photo-3738673.jpeg?auto=compress&cs=tinysrgb&h=350')",

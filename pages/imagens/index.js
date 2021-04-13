@@ -11,22 +11,24 @@ import CardItens from "../../components/CardItens";
 const Imagens = () => {
 	return (
 		<Layout>
-			<div className="grid grid-cols-4">
-				<div className="bg-red-700 border-r border-gray-400 flex flex-col p-5">
+			{/* grid grid-cols-4 */}
+			<div className="flex w-full">
+				<div className="bg-green-500 flex flex-col p-3 w-1/3">
 					<div className="bg-white">
-						<div>dsdf</div>
+						<div>Quais os paremetros?</div>
 					</div>
 					<div className="bg-white">
-						<div>dsdf</div>
+						<div>Qual a pesquisa?</div>
 					</div>
 					<div className="bg-white">
-						<div>dsdf</div>
+						<div>Onde estou?</div>
 					</div>
 					<div className="bg-white">
-						<div>dsdf</div>
+						<div>Esta Escuro?</div>
 					</div>
 				</div>
-				<div className="bg-yellow-600 col-span-3 grid lg:grid-cols-4 gap-1">
+				{/* col-span-3 grid lg:grid-cols-4 gap-1 */}
+				<div className="col-span-3 grid lg:grid-cols-4 gap-1 px-4">
 					<CardItens
 						id="a"
 						link="/foto1.png"

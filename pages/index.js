@@ -63,7 +63,7 @@ function HomePage() {
 			{/* ultimas imagens adicionadas no app */}
 			<section>
 				<div className="m-12">
-					<h4 className="font-bold pb-1 mt-10 border-b border-gray-300 w-44">
+					<h4 className="font-bold pb-1 mt-10 border-b border-gray-300 w-44 mb-5">
 						<a href="/imagens" className="text-base uppercase">
 							Imagens
 						</a>{" "}
