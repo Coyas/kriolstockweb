@@ -1,4 +1,4 @@
-const Icons = () => {
+const Musicas = () => {
 	return (
 		<Layout>
 			<p>Icons</p>
@@ -6,4 +6,4 @@ const Icons = () => {
 	);
 };
 
-export default Icons;
+export default Musicas;
