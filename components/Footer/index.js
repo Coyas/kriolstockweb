@@ -4,7 +4,8 @@ import Image from "next/image";
 const Footer = () => {
 	return (
 		<footer className="bg-gray-800">
-			<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+			terrasystem
+			{/* <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 				<div className="flex justify-between pt-4 pb-4 text-gray-300">
 					<div>
 						<h1>KriolStock</h1>
@@ -125,7 +126,7 @@ const Footer = () => {
 						Contribua
 					</a>
 				</div>
-			</div>
+			</div> */}
 		</footer>
 	);
 };
