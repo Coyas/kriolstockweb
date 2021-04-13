@@ -5,7 +5,7 @@ const CardItens = (props) => {
 	return (
 		// <!-- component -->
 		<div
-			className="bg-gray-100 m-auto w-96 h-64 mt-5"
+			className="bg-gray-100 m-auto w-full h-64 mt-5"
 			style={{
 				backgroundImage:
 					"url('https://images.pexels.com/photos/3738673/pexels-photo-3738673.jpeg?auto=compress&cs=tinysrgb&h=350')",
