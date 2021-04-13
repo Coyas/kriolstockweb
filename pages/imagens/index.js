@@ -1,13 +1,6 @@
 import Layout from "../../components/Layout";
 import CardItens from "../../components/CardItens";
 
-<CardItens
-	id="a"
-	link="/foto1.png"
-	author="kriolStock"
-	title="latada gammers"
-/>;
-
 const Imagens = () => {
 	return (
 		<Layout>
