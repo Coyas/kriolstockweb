@@ -2,8 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const CardItens = (props) => {
+	// alert(props.link);
 	return (
 		// <!-- component -->
+		// https://images.pexels.com/photos/3738673/pexels-photo-3738673.jpeg?auto=compress&cs=tinysrgb&h=350
 		<div
 			className="bg-gray-100 m-auto w-full h-64 mt-5"
 			style={{
