@@ -21,7 +21,7 @@ const Imagens = () => {
 					</div>
 				</div>
 				{/* col-span-3 grid lg:grid-cols-4 gap-1 */}
-				<div className="col-span-3 grid lg:grid-cols-4 gap-1 px-4">
+				<div className="col-span-3 grid lg:grid-cols-4 gap-1 px-4 ">
 					<CardItens
 						id="a"
 						link="/foto1.png"
