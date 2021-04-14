@@ -17,8 +17,15 @@ function HomePage() {
 
 		return (
 			<TmpLayout>
-				<div class="container mx-auto h-screen">
-					sdsd	
+				<div class="container mx-auto">
+					<div className="flex flex-col mt-20">
+						<div className="text-center p-4">
+							<Image src="/kriolStockLogo.png" width="800" height="200"/>
+						</div>
+						<div className="mt-16">
+						<MultCard />
+						</div>
+					</div>
 				</div>
 			</TmpLayout>
 		)
