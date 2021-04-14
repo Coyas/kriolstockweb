@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import TmpLayout from "../components/Layout/TmpLayout"
 import Banner from "../components/Banner";
 import Collection from "../components/Collection";
 import MultCard from "../components/MultCard";
@@ -9,6 +10,22 @@ const subscrever = () => {
 };
 
 function HomePage() {
+
+	const op = true;
+
+	if(op){
+
+		return (
+			<TmpLayout>
+				<div class="container mx-auto h-screen">
+					sdsd	
+				</div>
+			</TmpLayout>
+		)
+
+	}
+
+
 	return (
 		<Layout>
 			<Banner />
