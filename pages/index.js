@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import TmpLayout from "../components/Layout/TmpLayout"
+import TmpLayout from "../components/Layout/TmpLayout";
 import Banner from "../components/Banner";
 import Collection from "../components/Collection";
 import MultCard from "../components/MultCard";
@@ -10,28 +10,24 @@ const subscrever = () => {
 };
 
 function HomePage() {
-
 	const op = false;
 
-	if(op){
-
+	if (op) {
 		return (
 			<TmpLayout>
 				<div class="container mx-auto">
 					<div className="flex flex-col mt-20">
 						<div className="text-center p-4">
-							<Image src="/kriolStockLogo.png" width="800" height="200"/>
+							<Image src="/image12.png" width="800" height="200" />
 						</div>
 						<div className="mt-16">
-						<MultCard />
+							<MultCard />
 						</div>
 					</div>
 				</div>
 			</TmpLayout>
-		)
-
+		);
 	}
-
 
 	return (
 		<Layout>
