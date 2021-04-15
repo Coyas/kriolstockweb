@@ -65,7 +65,7 @@ const CardItens = (props) => {
 										</svg>
 									</a>
 								</Link>
-								<span className="text-xs ml-1 antialiased">5</span>
+								<span className="text-xs ml-1 antialiased">{props.like}</span>
 							</div>
 							<div className="w-max inline-flex ml-4 items-center">
 								<Link href={`/me/${props.id}/comenta`}>
@@ -86,7 +86,9 @@ const CardItens = (props) => {
 										</svg>
 									</a>
 								</Link>
-								<span className="text-xs ml-1 antialiased">0</span>
+								<span className="text-xs ml-1 antialiased">
+									{props.comenta}
+								</span>
 							</div>
 							<div className="w-max inline-flex ml-4 items-center">
 								<svg
