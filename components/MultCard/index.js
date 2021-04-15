@@ -8,6 +8,8 @@ const MultCard = () => {
 				"https://res.cloudinary.com/coyas/image/upload/v1618507062/site/kriol/BoaVista_f7rvab.jpg",
 			author: "kriolstock",
 			title: "Praia de Santa Monica,Boavista",
+			like: 1,
+			comenta: 1,
 		},
 		{
 			id: "b",
@@ -15,6 +17,8 @@ const MultCard = () => {
 				"https://res.cloudinary.com/coyas/image/upload/v1618507059/site/kriol/BoaVistab_epxham.jpg",
 			author: "kriolstock",
 			title: "Deserto de Viana, BoaVista",
+			like: 2,
+			comenta: 0,
 		},
 		{
 			id: "c",
@@ -22,6 +26,8 @@ const MultCard = () => {
 				"https://res.cloudinary.com/coyas/image/upload/v1618507055/site/kriol/BoaVistac_cjrtv8.jpg",
 			author: "kriolstock",
 			title: "Noite No Deserto de Viana, BoaVista",
+			like: 2,
+			comenta: 2,
 		},
 		{
 			id: "d",
@@ -29,6 +35,8 @@ const MultCard = () => {
 				"https://res.cloudinary.com/coyas/image/upload/v1618507067/site/kriol/fogo_k9mlaf.jpg",
 			author: "kriolstock",
 			title: "Vulcao do Fogo",
+			like: 3,
+			comenta: 2,
 		},
 	];
 
@@ -43,6 +51,8 @@ const MultCard = () => {
 						link={value.link}
 						author={value.author}
 						title={value.title}
+						like={value.like}
+						comenta={value.comenta}
 					/>
 				))}
 		</div>
